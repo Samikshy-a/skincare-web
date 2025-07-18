@@ -1,0 +1,97 @@
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2tpbiUyMGNhcmUlMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA==");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Remove the overlay's flex to only use left side */
+.overlay {
+  width: 90%;
+  max-width: 800px; /* smaller width now */
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  padding: 40px;
+  color: white;
+  text-align: center; 
+}
+
+
+.left {
+  padding: 0; 
+}
+
+
+.left h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.left h1 .welcome {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #eee;
+}
+
+.left h1 .skin {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(170, 170, 167);
+  margin: 0 8px;
+}
+
+.left h1 .theory {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #f2c94c; 
+}
+
+
+.left p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+
+.buttons button {
+  margin: 10px 10px 0 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons button:nth-child(1) {
+  background-color: #d6336c;
+  color: white;
+}
+
+.buttons button:nth-child(1):hover {
+  background-color: #c02656;
+}
+
+.buttons button:nth-child(2),
+.buttons button:nth-child(3) {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.buttons button:nth-child(2):hover,
+.buttons button:nth-child(3):hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.right {
+  display: none;
+}

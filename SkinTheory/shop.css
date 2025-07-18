@@ -1,0 +1,134 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #FFD700;
+  font-style: italic;
+  font-size: 16px;
+  display: inline;
+  margin-left: 4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  min-width: 160px;
+  display: none;
+  flex-direction: column;
+  border-radius: 6px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  width: 250px;
+  height: 35px;
+  margin: 10px 0;
+}
+
+.search-bar input {
+  border: none;
+  padding: 0 10px;
+  flex: 1;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-actions a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-actions a:hover {
+  color: #ccc;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.shop-content {
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: auto;
+}
